@@ -1,0 +1,36 @@
+[submodule "subjects/spring-petclinic-microservices"]
+	path = subjects/spring-petclinic-microservices
+	url = https://github.com/spring-petclinic/spring-petclinic-microservices
+[submodule "subjects/piggymetrics"]
+	path = subjects/piggymetrics
+	url = https://github.com/sqshq/piggymetrics
+[submodule "subjects/t2-project"]
+	path = subjects/t2-project
+	url = https://github.com/t2-project/t2-project
+[submodule "subjects/spring-boot-microservices-series-v2"]
+	path = subjects/spring-boot-microservices-series-v2
+	url = https://github.com/rajadilipkolli/spring-boot-microservices-series-v2
+[submodule "subjects/acme-fitness-store"]
+	path = subjects/acme-fitness-store
+	url = https://github.com/CloudLabsAI-Azure/acme-fitness-store
+[submodule "subjects/aks-workload-identity-terraform"]
+	path = subjects/aks-workload-identity-terraform
+	url = https://github.com/Azure-Samples/aks-workload-identity-terraform
+[submodule "subjects/t2-devops"]
+	path = subjects/t2-devops
+	url = https://github.com/t2-project/devops
+[submodule "subjects/ecommerce-microservices"]
+	path = subjects/ecommerce-microservices
+	url = https://github.com/hacisimsek/ecommerce-microservices
+[submodule "subjects/library-management"]
+	path = subjects/library-management
+	url = https://github.com/joeltadeu/library-management
+[submodule "tools/retriever"]
+	path = tools/retriever
+	url = https://github.com/View-Based-Reverse-Engineering/Retriever
+[submodule "tools/semarc"]
+	path = tools/semarc
+	url = https://github.com/xjtu-enre/TSE2025SemArc
+[submodule "tools/retriever-benchmark"]
+	path = tools/retriever-benchmark
+	url = https://github.com/View-Based-Reverse-Engineering/Retriever-Benchmark

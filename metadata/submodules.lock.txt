@@ -1,0 +1,16 @@
+ 25a3e64aa103ad657c8bac3fe5b5d3c26449f688 subjects/acme-fitness-store (heads/Azure)
+ ff4341bed2e03a7bbb5ee862e5c82129861ee45d subjects/aks-workload-identity-terraform (heads/main)
+ 2f91b132283c6391b4f5dc1e06b6c874d8250273 subjects/ecommerce-microservices (heads/main)
+ 430b48595cb290c5d14ab9eb4402e6a563a7ab65 subjects/library-management (v1.0.0-4-g430b485)
+ 6bb2cf9ddbca980b664d3edbb6ff775d75369278 subjects/piggymetrics (spring.version.2.0.3-50-g6bb2cf9)
+ b4f1b5ded48e5cc628776e4299b4db62e600dd5f subjects/spring-boot-microservices-series-v2 (heads/main)
+ 305a1f13e4f961001d4e6cb50a9db51dc3fc5967 subjects/spring-petclinic-microservices (v3.4.1-14-g305a1f1)
+ 729e3fa80da3aa859fb3c78103ea5e0dec8f0fd6 subjects/t2-devops (heads/main)
+ 04d72221b0c05563f8597ef25ea1d134e5477b4e subjects/t2-project (heads/main)
+-729e3fa80da3aa859fb3c78103ea5e0dec8f0fd6 subjects/t2-project/devops
+-f7109109c2a73c4b4c373525af9609cf6354d808 subjects/t2-project/documentation
+-61dc3670a3d71a327d176a97937227662ee7a21e subjects/t2-project/microservices
+-5a6e5e955ed535191b59b21494165432fcb6ef06 subjects/t2-project/modulith
+ 0a834a41ee6596725fb553afebcaae4e9e875989 tools/retriever (v5.2.0.202410181425)
+ 6e52cb224216d2784c08fd6aa90e21da3616b354 tools/retriever-benchmark (v5.2.0.202410181425)
+ b635e5d9b14c910308af62f39e464ff2b58fa192 tools/semarc (heads/main)

@@ -1,0 +1,13 @@
+category	name	path	url	notes
+subject	spring-petclinic-microservices	subjects/spring-petclinic-microservices	https://github.com/spring-petclinic/spring-petclinic-microservices	Sistema-alvo; microsserviços Spring.
+subject	piggymetrics	subjects/piggymetrics	https://github.com/sqshq/piggymetrics	Sistema-alvo; microsserviços Spring/Cloud.
+subject	t2-project	subjects/t2-project	https://github.com/t2-project/t2-project	Sistema-alvo; aplicação principal T2.
+subject	spring-boot-microservices-series-v2	subjects/spring-boot-microservices-series-v2	https://github.com/rajadilipkolli/spring-boot-microservices-series-v2	Sistema-alvo; exemplo educacional Spring Boot.
+subject	acme-fitness-store	subjects/acme-fitness-store	https://github.com/CloudLabsAI-Azure/acme-fitness-store	Sistema-alvo; aplicação de microsserviços em ambiente cloud.
+subject	aks-workload-identity-terraform	subjects/aks-workload-identity-terraform	https://github.com/Azure-Samples/aks-workload-identity-terraform	Candidato complementar IaC/Terraform; não tratar automaticamente como sistema de microsserviços completo.
+subject	t2-devops	subjects/t2-devops	https://github.com/t2-project/devops	Infraestrutura/devops associada ao T2; analisar em conjunto com t2-project.
+subject	ecommerce-microservices	subjects/ecommerce-microservices	https://github.com/hacisimsek/ecommerce-microservices	Sistema-alvo; microsserviços e-commerce.
+subject	library-management	subjects/library-management	https://github.com/joeltadeu/library-management	Sistema-alvo; gerenciamento de biblioteca.
+tool	retriever	tools/retriever	https://github.com/View-Based-Reverse-Engineering/Retriever	Ferramenta de recuperação/reconstrução arquitetural baseada em views.
+tool	semarc	tools/semarc	https://github.com/xjtu-enre/TSE2025SemArc	Ferramenta SemArc; recuperação arquitetural aumentada com semântica/LLM.
+tool	retriever-benchmark	tools/retriever-benchmark	https://github.com/View-Based-Reverse-Engineering/Retriever-Benchmark	Benchmark auxiliar do Retriever.
