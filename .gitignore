@@ -1,0 +1,25 @@
+# Ambientes locais
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# IDEs
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Temporários
+tmp/
+.cache/
+.DS_Store
+
+# Resultados grandes/intermediários
+results/*
+!results/.gitkeep
+
+# Arquivos de sistema
+Thumbs.db
