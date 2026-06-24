@@ -2,15 +2,7 @@
 
 Repositório de trabalho da pesquisa de recuperação arquitetural em sistemas baseados em microsserviços.
 
-Este repositório organiza:
-
-- sistemas-alvo analisados;
-- ferramentas externas utilizadas nos fluxos experimentais;
-- scripts próprios;
-- configurações de experimentos;
-- resultados gerados;
-- modelos de referência;
-- metadados de rastreabilidade.
+Este repositório organiza sistemas-alvo, ferramentas externas, scripts próprios, configurações experimentais, resultados, modelos de referência e metadados de rastreabilidade.
 
 ## Estrutura
 
@@ -25,7 +17,7 @@ Este repositório organiza:
 
 ## Submódulos
 
-Os repositórios externos devem ser adicionados como submódulos Git, preservando a rastreabilidade dos commits analisados.
+Os repositórios externos devem ser adicionados como submódulos Git para preservar a rastreabilidade dos commits analisados.
 
 Após clonar este repositório em outra máquina, usar:
 
