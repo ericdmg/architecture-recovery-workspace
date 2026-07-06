@@ -2,8 +2,16 @@
 .env
 .venv/
 venv/
+env/
 __pycache__/
 *.pyc
+.pytest_cache/
+*.env
+config_private.py
+tools/semarc/semantic_analysis/config_private.py
+tools/semarc/.venv/
+tools/semarc/**/__pycache__/
+tools/semarc/**/.cache/
 
 # IDEs
 .idea/
