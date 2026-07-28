@@ -27,7 +27,7 @@
 	url = https://github.com/joeltadeu/library-management
 [submodule "tools/retriever"]
 	path = tools/retriever
-	url = https://github.com/View-Based-Reverse-Engineering/Retriever
+	url = https://github.com/PalladioSimulator/Palladio-ReverseEngineering-Retriever
 [submodule "tools/semarc"]
 	path = tools/semarc
 	url = https://github.com/xjtu-enre/TSE2025SemArc
