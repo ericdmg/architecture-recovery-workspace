@@ -34,3 +34,6 @@
 [submodule "tools/retriever-benchmark"]
 	path = tools/retriever-benchmark
 	url = https://github.com/View-Based-Reverse-Engineering/Retriever-Benchmark
+[submodule "subjects/spring-petclinic-microservices-azure"]
+	path = subjects/spring-petclinic-microservices-azure
+	url = https://github.com/Azure-Samples/spring-petclinic-microservices.git
