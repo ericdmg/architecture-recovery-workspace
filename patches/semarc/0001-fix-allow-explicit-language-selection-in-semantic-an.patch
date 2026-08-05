@@ -1,0 +1,49 @@
+From 0890abfd34e900386512af48c11f044868d2b982 Mon Sep 17 00:00:00 2001
+From: Eric <eric.dmg@outlook.com>
+Date: Tue, 28 Jul 2026 18:18:39 -0300
+Subject: [PATCH 1/2] fix: allow explicit language selection in semantic
+ analysis
+
+---
+ semantic_analysis/semantic_analysis.py | 15 +++++++++++++--
+ 1 file changed, 13 insertions(+), 2 deletions(-)
+
+diff --git a/semantic_analysis/semantic_analysis.py b/semantic_analysis/semantic_analysis.py
+index 5c48a16..df8a27e 100644
+--- a/semantic_analysis/semantic_analysis.py
++++ b/semantic_analysis/semantic_analysis.py
+@@ -4,6 +4,7 @@ from crazy_utils_no_ui import request_gpt_model_multi_threads_with_no_ui_and_hig
+ from uml_to_code_generation.toolbox_no_ui import promote_file_to_downloadzone
+ from uml_to_code_generation import tools as tl
+ from toolbox import write_history_to_file
++import argparse
+ import os, glob,copy,sys
+ from md2json import md2json_sum,md2json
+ from arch_pattern_analysis import execute_parsing_and_analysis
+@@ -127,11 +128,21 @@ def code_semantic_analysis(language, project_folder, llm_kwargs, plugin_kwargs,
+     return res
+ 
+ def get_semantic():
+-    folder_path=sys.argv[1]
++    parser = argparse.ArgumentParser()
++    parser.add_argument("project_folder")
++    parser.add_argument(
++        "--language",
++        type=str.lower,
++        choices=("python", "java", "c", "cpp"),
++        default="python",
++    )
++    args = parser.parse_args()
++
++    folder_path = args.project_folder
+     project_name = os.path.basename(folder_path)
+ 
+     llm_kwargs = tl.get_default_kwargs()
+-    language = "python"
++    language = args.language
+ 
+     code_sem_res=code_semantic_analysis(language,folder_path, llm_kwargs, plugin_kwargs={}, history=[], system_prompt="")
+     code_sem_path = f"{project_name}_CodeSem.json"
+-- 
+2.43.0
+

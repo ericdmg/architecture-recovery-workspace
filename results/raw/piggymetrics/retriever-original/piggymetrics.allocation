@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://palladiosimulator.org/PalladioComponentModel/Allocation/5.2" id="_IWfkUIqwEfGXBJqyQuTzMA">
+  <targetResourceEnvironment_Allocation href="piggymetrics.resourceenvironment#/"/>
+  <system_Allocation href="piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA"/>
+  <allocationContexts_Allocation id="_IWdvIIqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWadIqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ654qwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWMIqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWaboqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ65YqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWMYqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWaZYqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ66IqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWMoqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWaeIqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ60YqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWM4qwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWacIqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ644qwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWNIqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWabIqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ63oqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWNYqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWadYqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ64YqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWNoqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWab4qwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ634qwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWN4qwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWaZIqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ62oqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWOIqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWad4qwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ65IqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWOYqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWabYqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWRh4IqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWOoqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWac4qwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ65oqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWO4qwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWaaIqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ66YqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWPIqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWaeYqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWRh4oqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWPYqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWaYoqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ63YqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWPoqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWaa4qwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ62IqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWP4qwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWaaYqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ60IqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWQIqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWaY4qwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ62YqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWQYqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWaYYqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ614qwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWQoqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWae4qwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ604qwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWQ4qwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWaZ4qwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ61oqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWRIqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWadoqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ61YqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWRYqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWaYIqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ64IqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWRoqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWafIqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWRh4YqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWR4qwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWacoqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ63IqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWSIqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWaeoqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ624qwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWSYqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWacYqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ61IqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWSoqwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWaZoqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ60oqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IWeWS4qwEfGXBJqyQuTzMA">
+    <resourceContainer_AllocationContext href="piggymetrics.resourceenvironment#_IWWaaoqwEfGXBJqyQuTzMA"/>
+    <assemblyContext_AllocationContext href="piggymetrics.system#_IWQ64oqwEfGXBJqyQuTzMA"/>
+  </allocationContexts_Allocation>
+</allocation:Allocation>

@@ -1,0 +1,129 @@
+From 3359a4596cb6d9d4b8c234bfe5429bd6cabfe550 Mon Sep 17 00:00:00 2001
+From: Eric <eric.dmg@outlook.com>
+Date: Tue, 28 Jul 2026 18:57:47 -0300
+Subject: [PATCH 2/2] fix: make transformer dependencies optional
+
+---
+ SemArc/experiment/sentence2matrix.py | 20 ++++++++++++++++----
+ SemArc/utils/fcag_utils.py           |  1 -
+ SemArc/utils/sentence2matrix.py      | 20 ++++++++++++++++----
+ 3 files changed, 32 insertions(+), 9 deletions(-)
+
+diff --git a/SemArc/experiment/sentence2matrix.py b/SemArc/experiment/sentence2matrix.py
+index dd0f3f0..d4a2bc5 100644
+--- a/SemArc/experiment/sentence2matrix.py
++++ b/SemArc/experiment/sentence2matrix.py
+@@ -3,11 +3,8 @@ from nltk.tokenize import word_tokenize
+ import nltk
+ import numpy as np
+ import json
+-from transformers import BertTokenizer, BertModel
+-import torch
+ from sklearn.decomposition import PCA
+ import os
+-from sentence_transformers import SentenceTransformer
+ 
+ 
+ def get_sentence_vector(sentence, vector_size=100, window=5, min_count=1, workers=4):
+@@ -31,6 +28,14 @@ def get_sentence_vector(sentence, vector_size=100, window=5, min_count=1, worker
+     return sentence_vector
+ 
+ def get_sentence_vector_bert(sentence):
++    try:
++        from transformers import BertTokenizer, BertModel
++        import torch
++    except ModuleNotFoundError as exc:
++        raise RuntimeError(
++            "Transformer embeddings require sentence-transformers, transformers and torch"
++        ) from exc
++
+     os.environ['HTTP_PROXY'] = 'http://127.0.0.1:10809'
+     os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:10809'
+     # 加载预训练的BERT模型和分词器
+@@ -45,6 +50,13 @@ def get_sentence_vector_bert(sentence):
+     return bert_embedding
+ 
+ def get_sentence_vector_sentence_transformer(sentence):
++    try:
++        from sentence_transformers import SentenceTransformer
++    except ModuleNotFoundError as exc:
++        raise RuntimeError(
++            "Transformer embeddings require sentence-transformers, transformers and torch"
++        ) from exc
++
+     # 加载预训练的SentenceTransformer模型
+     model = SentenceTransformer('all-MiniLM-L6-v2')
+     # 获取句子向量
+@@ -82,4 +94,4 @@ def generate_matrix_from_json(json_path):
+ # json_path = 'E:\XJTU\架构逆向\lda_demoGPT\experiment\summary.json'
+ # result_matrix = generate_matrix_from_json(json_path)
+ # print("最终矩阵:")
+-# print(result_matrix)
+\ No newline at end of file
++# print(result_matrix)
+diff --git a/SemArc/utils/fcag_utils.py b/SemArc/utils/fcag_utils.py
+index 717e1bd..da712f3 100644
+--- a/SemArc/utils/fcag_utils.py
++++ b/SemArc/utils/fcag_utils.py
+@@ -1,6 +1,5 @@
+ import numpy as np
+ import json
+-from sentence_transformers import SentenceTransformer
+ from sklearn.metrics.pairwise import cosine_similarity
+ from sklearn.cluster import KMeans
+ from utils.sentence2matrix import get_sentence_vector_sentence_transformer, get_sentence_vector
+diff --git a/SemArc/utils/sentence2matrix.py b/SemArc/utils/sentence2matrix.py
+index dd0f3f0..d4a2bc5 100644
+--- a/SemArc/utils/sentence2matrix.py
++++ b/SemArc/utils/sentence2matrix.py
+@@ -3,11 +3,8 @@ from nltk.tokenize import word_tokenize
+ import nltk
+ import numpy as np
+ import json
+-from transformers import BertTokenizer, BertModel
+-import torch
+ from sklearn.decomposition import PCA
+ import os
+-from sentence_transformers import SentenceTransformer
+ 
+ 
+ def get_sentence_vector(sentence, vector_size=100, window=5, min_count=1, workers=4):
+@@ -31,6 +28,14 @@ def get_sentence_vector(sentence, vector_size=100, window=5, min_count=1, worker
+     return sentence_vector
+ 
+ def get_sentence_vector_bert(sentence):
++    try:
++        from transformers import BertTokenizer, BertModel
++        import torch
++    except ModuleNotFoundError as exc:
++        raise RuntimeError(
++            "Transformer embeddings require sentence-transformers, transformers and torch"
++        ) from exc
++
+     os.environ['HTTP_PROXY'] = 'http://127.0.0.1:10809'
+     os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:10809'
+     # 加载预训练的BERT模型和分词器
+@@ -45,6 +50,13 @@ def get_sentence_vector_bert(sentence):
+     return bert_embedding
+ 
+ def get_sentence_vector_sentence_transformer(sentence):
++    try:
++        from sentence_transformers import SentenceTransformer
++    except ModuleNotFoundError as exc:
++        raise RuntimeError(
++            "Transformer embeddings require sentence-transformers, transformers and torch"
++        ) from exc
++
+     # 加载预训练的SentenceTransformer模型
+     model = SentenceTransformer('all-MiniLM-L6-v2')
+     # 获取句子向量
+@@ -82,4 +94,4 @@ def generate_matrix_from_json(json_path):
+ # json_path = 'E:\XJTU\架构逆向\lda_demoGPT\experiment\summary.json'
+ # result_matrix = generate_matrix_from_json(json_path)
+ # print("最终矩阵:")
+-# print(result_matrix)
+\ No newline at end of file
++# print(result_matrix)
+-- 
+2.43.0
+

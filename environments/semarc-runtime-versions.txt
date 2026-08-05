@@ -1,0 +1,11 @@
+python=Python 3.9.25
+uv=uv 0.12.0 (x86_64-unknown-linux-gnu)
+java=openjdk version "17.0.19" 2026-04-21
+javac=javac 17.0.19
+semarc_baseline=5b92b08450ec71d21e7d1432393dbb3da724afa0
+semarc_executed=3359a4596cb6d9d4b8c234bfe5429bd6cabfe550
+word2vec_workers=4
+kmeans_random_state=0
+llm_model=gpt-4o-mini
+llm_endpoint=api.openai.com
+transformers_installed=no

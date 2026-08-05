@@ -1,0 +1,392 @@
+{
+    "summary": [
+        {
+            "file": "account-service/src/main/java/com/piggymetrics/account/AccountApplication.java",
+            "Functionality": "This is the main entry point for the Spring Boot application, initializing the application context and enabling service discovery."
+        },
+        {
+            "file": "account-service/src/main/java/com/piggymetrics/account/client/AuthServiceClient.java",
+            "Functionality": "A Feign client interface used to interact with the authentication service, providing methods to create and manage user authentication."
+        },
+        {
+            "file": "account-service/src/main/java/com/piggymetrics/account/client/StatisticsServiceClientFallback.java",
+            "Functionality": "A fallback implementation for the StatisticsServiceClient interface that provides default behavior in case of failures when calling the statistics service."
+        },
+        {
+            "file": "account-service/src/main/java/com/piggymetrics/account/client/StatisticsServiceClient.java",
+            "Functionality": "A Feign client interface for calling the statistics service, defining methods for retrieving and manipulating statistical data related to accounts."
+        },
+        {
+            "file": "account-service/src/main/java/com/piggymetrics/account/controller/ErrorHandler.java",
+            "Functionality": "A global exception handler using @ControllerAdvice that intercepts and processes exceptions, returning appropriate HTTP response codes."
+        },
+        {
+            "file": "account-service/src/main/java/com/piggymetrics/account/controller/AccountController.java",
+            "Functionality": "A REST controller that handles HTTP requests related to user accounts, providing endpoints for account creation, retrieval, and management."
+        },
+        {
+            "file": "account-service/src/main/java/com/piggymetrics/account/service/AccountService.java",
+            "Functionality": "An interface defining the contract for account-related business logic, including methods for creating, updating, and retrieving account information."
+        },
+        {
+            "file": "account-service/src/main/java/com/piggymetrics/account/service/AccountServiceImpl.java",
+            "Functionality": "The implementation of AccountService interface, containing the business logic for managing accounts and utilizing repositories and clients to perform actions."
+        },
+        {
+            "file": "account-service/src/main/java/com/piggymetrics/account/service/security/CustomUserInfoTokenServices.java",
+            "Functionality": "Custom implementation of user information retrieval through token services, extending UserInfoTokenServices for OAuth2 authentication scenarios."
+        },
+        {
+            "file": "account-service/src/main/java/com/piggymetrics/account/domain/Saving.java",
+            "Functionality": "Represents the saving account entity containing details about the savings amount, currency, and interest rates."
+        },
+        {
+            "file": "account-service/src/main/java/com/piggymetrics/account/domain/TimePeriod.java",
+            "Functionality": "An enumeration for defining various time periods (e.g., YEAR, MONTH) used for account calculations and statistics."
+        },
+        {
+            "file": "account-service/src/main/java/com/piggymetrics/account/domain/Account.java",
+            "Functionality": "Defines the Account entity, encapsulating the account details, user associations, and various attributes for account management."
+        },
+        {
+            "file": "account-service/src/main/java/com/piggymetrics/account/domain/User.java",
+            "Functionality": "Represents the User entity that includes user information, such as username and password, typically used for user authentication."
+        },
+        {
+            "file": "account-service/src/main/java/com/piggymetrics/account/domain/Item.java",
+            "Functionality": "Defines an item entity within the account service, which may represent a purchasable or manageable resource associated with a user's account."
+        },
+        {
+            "file": "account-service/src/main/java/com/piggymetrics/account/domain/Currency.java",
+            "Functionality": "An enumeration defining different currency types supported in financial calculations within the system."
+        },
+        {
+            "file": "account-service/src/main/java/com/piggymetrics/account/repository/AccountRepository.java",
+            "Functionality": "A Spring Data repository interface for CRUD operations on Account entities, providing database interactions with MongoDB."
+        },
+        {
+            "file": "account-service/src/main/java/com/piggymetrics/account/config/ResourceServerConfig.java",
+            "Functionality": "This file configures the OAuth2 Resource Server for the account service, ensuring secure access to resources and proper handling of authentication."
+        },
+        {
+            "file": "account-service/src/test/java/com/piggymetrics/account/AccountServiceApplicationTests.java",
+            "Functionality": "This file contains unit tests to verify the application context loading for the account service, ensuring that the Spring Boot application starts correctly."
+        },
+        {
+            "file": "account-service/src/test/java/com/piggymetrics/account/client/StatisticsServiceClientFallbackTest.java",
+            "Functionality": "This test class verifies the fallback mechanisms of the StatisticsServiceClient, ensuring that the system handles failures gracefully while calling external services."
+        },
+        {
+            "file": "account-service/src/test/java/com/piggymetrics/account/controller/AccountControllerTest.java",
+            "Functionality": "This test class contains unit tests for the AccountController, verifying that the HTTP endpoints behave as expected and return correct responses."
+        },
+        {
+            "file": "account-service/src/test/java/com/piggymetrics/account/service/AccountServiceTest.java",
+            "Functionality": "This is a unit test class for the AccountService implementation, ensuring that the business logic related to account management functions correctly."
+        },
+        {
+            "file": "account-service/src/test/java/com/piggymetrics/account/repository/AccountRepositoryTest.java",
+            "Functionality": "This file contains tests for the AccountRepository, validating the CRUD operations and data access layer interactions."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/StatisticsApplication.java",
+            "Functionality": "This is the main entry point for the statistics service, configuring and launching the Spring Boot application."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/client/ExchangeRatesClient.java",
+            "Functionality": "This interface defines a Feign client for retrieving exchange rate data from an external service."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/client/ExchangeRatesClientFallback.java",
+            "Functionality": "This class provides a fallback mechanism for fetching exchange rates, returning default values when the external service is unavailable."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/controller/StatisticsController.java",
+            "Functionality": "This REST controller manages HTTP requests related to statistics, including endpoints for retrieving and processing statistical data."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/service/ExchangeRatesServiceImpl.java",
+            "Functionality": "This implementation class processes exchange rates and provides business logic for managing currency conversions."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/service/ExchangeRatesService.java",
+            "Functionality": "This interface describes the service contract for handling exchange rates, including methods for fetching rate information."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/service/StatisticsServiceImpl.java",
+            "Functionality": "This class implements the StatisticsService interface, handling business logic related to statistical calculations and data management."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/service/StatisticsService.java",
+            "Functionality": "This interface defines the contract for statistics-related services, including methods for retrieving statistical data based on account information."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/service/security/CustomUserInfoTokenServices.java",
+            "Functionality": "This class extends OAuth2's `UserInfoTokenServices`, customizing how user information is retrieved from the OAuth2 resource server."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/Saving.java",
+            "Functionality": "This class represents the Saving entity, encapsulating details about savings, including amount and currency types."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/TimePeriod.java",
+            "Functionality": "Defines an enumeration for different time periods (Years, Quarters, Months, Days, Hours) used in financial statistics calculation."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/Account.java",
+            "Functionality": "Represents a financial account entity containing information about income, expenses, and savings, with annotations for database persistence."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/Item.java",
+            "Functionality": "Defines an item associated with transactions, with properties for title and amount, including validation constraints."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/ExchangeRatesContainer.java",
+            "Functionality": "Holds the exchange rates for different currencies against a base currency, providing a structure to manage and store these rates."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/Currency.java",
+            "Functionality": "Enumeration of currency types (USD, EUR, RUB), providing a static method for obtaining the base currency."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/timeseries/DataPoint.java",
+            "Functionality": "Represents a data point in a timeseries, capturing specific daily financial metrics such as income, expenses, and currency exchange rates."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/timeseries/DataPointId.java",
+            "Functionality": "Defines a composite key for identifying unique data points using account ID and date, implementing Serializable for persistence."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/timeseries/StatisticMetric.java",
+            "Functionality": "Enumerates various statistical metrics (Incomes Amount, Expenses Amount, Saving Amount) used for financial analysis."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/timeseries/ItemMetric.java",
+            "Functionality": "Holds metrics related to specific financial items, including amounts in a specified currency."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/repository/DataPointRepository.java",
+            "Functionality": "Interface for CRUD operations on DataPoint entities, leveraging Spring Data JPA for database interaction."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/repository/converter/DataPointIdReaderConverter.java",
+            "Functionality": "Converter class that transforms MongoDB DBObject to a DataPointId object for data retrieval."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/repository/converter/DataPointIdWriterConverter.java",
+            "Functionality": "Converter class that converts a DataPointId object into a MongoDB DBObject for data storage."
+        },
+        {
+            "file": "statistics-service/src/main/java/com/piggymetrics/statistics/config/ResourceServerConfig.java",
+            "Functionality": "Configuration class that sets up OAuth2 for securing resources in the application."
+        },
+        {
+            "file": "statistics-service/src/test/java/com/piggymetrics/statistics/StatisticsServiceApplicationTests.java",
+            "Functionality": "JUnit test class to verify that the Spring application context loads correctly."
+        },
+        {
+            "file": "statistics-service/src/test/java/com/piggymetrics/statistics/client/ExchangeRatesClientTest.java",
+            "Functionality": "Unit test for the ExchangeRatesClient to ensure it correctly retrieves exchange rate information."
+        },
+        {
+            "file": "statistics-service/src/test/java/com/piggymetrics/statistics/controller/StatisticsControllerTest.java",
+            "Functionality": "Unit test class for StatisticsController, validating its endpoints and ensuring correct response behavior."
+        },
+        {
+            "file": "statistics-service/src/test/java/com/piggymetrics/statistics/service/ExchangeRatesServiceImplTest.java",
+            "Functionality": "Unit tests for the ExchangeRatesServiceImpl class to validate the functionalities related to exchange rates and currency conversions."
+        },
+        {
+            "file": "statistics-service/src/test/java/com/piggymetrics/statistics/service/StatisticsServiceImplTest.java",
+            "Functionality": "Unit tests for the StatisticsServiceImpl class, ensuring proper handling of financial statistics and related data processing."
+        },
+        {
+            "file": "statistics-service/src/test/java/com/piggymetrics/statistics/repository/DataPointRepositoryTest.java",
+            "Functionality": "Tests the DataPointRepository for verifying the persistence operations related to financial data points."
+        },
+        {
+            "file": "gateway/src/main/java/com/piggymetrics/gateway/GatewayApplication.java",
+            "Functionality": "Main entry point for the Gateway service, responsible for starting the Spring Boot application and configuring the API gateway."
+        },
+        {
+            "file": "gateway/src/test/java/com/piggymetrics/gateway/GatewayApplicationTests.java",
+            "Functionality": "JUnit tests to validate the loading of the Spring application context for the Gateway application."
+        },
+        {
+            "file": "auth-service/src/main/java/com/piggymetrics/auth/AuthApplication.java",
+            "Functionality": "Main entry point for the authentication service, responsible for configuring and launching the Spring Boot application."
+        },
+        {
+            "file": "auth-service/src/main/java/com/piggymetrics/auth/controller/UserController.java",
+            "Functionality": "Controller that handles HTTP requests related to user operations, including registration and user data retrieval."
+        },
+        {
+            "file": "auth-service/src/main/java/com/piggymetrics/auth/service/UserService.java",
+            "Functionality": "Interface defining the service methods related to user management, such as user creation and retrieval."
+        },
+        {
+            "file": "auth-service/src/main/java/com/piggymetrics/auth/service/UserServiceImpl.java",
+            "Functionality": "Implementation of the UserService interface, providing the logic for user management operations."
+        },
+        {
+            "file": "auth-service/src/main/java/com/piggymetrics/auth/service/security/MongoUserDetailsService.java",
+            "Functionality": "Service that loads user-specific data from MongoDB; it implements UserDetailsService for Spring Security integration."
+        },
+        {
+            "file": "auth-service/src/main/java/com/piggymetrics/auth/domain/User.java",
+            "Functionality": "Entity representing a user in the system, containing attributes like username and password, mapped to a MongoDB collection."
+        },
+        {
+            "file": "auth-service/src/main/java/com/piggymetrics/auth/repository/UserRepository.java",
+            "Functionality": "Repository interface for CRUD operations on User entities, leveraging Spring Data MongoDB functionalities."
+        },
+        {
+            "file": "auth-service/src/main/java/com/piggymetrics/auth/config/OAuth2AuthorizationConfig.java",
+            "Functionality": "Configuration class for setting up OAuth 2.0 authorization server capabilities within the authentication service."
+        },
+        {
+            "file": "auth-service/src/main/java/com/piggymetrics/auth/config/WebSecurityConfig.java",
+            "Functionality": "Web security configuration class for the authentication service, defining security rules and user authentication mechanisms."
+        },
+        {
+            "file": "auth-service/src/test/java/com/piggymetrics/auth/AuthServiceApplicationTests.java",
+            "Functionality": "Tests to verify the context loading of the AuthService application with JUnit."
+        },
+        {
+            "file": "auth-service/src/test/java/com/piggymetrics/auth/controller/UserControllerTest.java",
+            "Functionality": "Unit tests for the UserController, ensuring the correctness of user-related API endpoints."
+        },
+        {
+            "file": "auth-service/src/test/java/com/piggymetrics/auth/service/UserServiceTest.java",
+            "Functionality": "This file contains unit tests for the UserService class, focusing on ensuring that user-related functionalities such as creation, retrieval, and management of users are working correctly."
+        },
+        {
+            "file": "auth-service/src/test/java/com/piggymetrics/auth/service/security/MongoUserDetailsServiceTest.java",
+            "Functionality": "This file contains tests for the MongoUserDetailsService which retrieves user details from MongoDB for authentication purposes, ensuring proper user detail management during authentication."
+        },
+        {
+            "file": "auth-service/src/test/java/com/piggymetrics/auth/repository/UserRepositoryTest.java",
+            "Functionality": "This file contains tests for the UserRepository, validating the data access layer that interacts with the database, specifically for user entities."
+        },
+        {
+            "file": "registry/src/main/java/com/piggymetrics/registry/RegistryApplication.java",
+            "Functionality": "This file is the entry point for the Eureka registry server, enabling other microservices to register themselves for service discovery."
+        },
+        {
+            "file": "monitoring/src/main/java/com/piggymetrics/monitoring/MonitoringApplication.java",
+            "Functionality": "This file serves as the main application class for the monitoring service, responsible for bootstrapping the monitoring functionalities."
+        },
+        {
+            "file": "monitoring/src/test/java/com/piggymetrics/monitoring/MonitoringApplicationTests.java",
+            "Functionality": "This file contains tests to verify that the application context of the monitoring service loads correctly and functions as expected."
+        },
+        {
+            "file": "notification-service/src/main/java/com/piggymetrics/notification/NotificationServiceApplication.java",
+            "Functionality": "This file is the entry point for the notification service, responsible for starting the application and configuring necessary beans."
+        },
+        {
+            "file": "notification-service/src/main/java/com/piggymetrics/notification/client/AccountServiceClient.java",
+            "Functionality": "This file defines a Feign client interface for communication with the account service, enabling seamless service integration."
+        },
+        {
+            "file": "notification-service/src/main/java/com/piggymetrics/notification/controller/RecipientController.java",
+            "Functionality": "This file contains the REST controller for managing notification recipients, handling HTTP requests related to recipient information."
+        },
+        {
+            "file": "notification-service/src/main/java/com/piggymetrics/notification/service/EmailServiceImpl.java",
+            "Functionality": "This file provides the implementation for sending email notifications, defining the logic to create and send emails to recipients."
+        },
+        {
+            "file": "notification-service/src/main/java/com/piggymetrics/notification/service/NotificationServiceImpl.java",
+            "Functionality": "This file implements the NotificationService interface, providing business logic for sending notifications, scheduling tasks, and managing notification workflows."
+        },
+        {
+            "file": "notification-service/src/main/java/com/piggymetrics/notification/service/NotificationService.java",
+            "Functionality": "This file defines the NotificationService interface, specifying methods for sending different types of notifications, such as backups and reminders."
+        },
+        {
+            "file": "notification-service/src/main/java/com/piggymetrics/notification/service/RecipientServiceImpl.java",
+            "Functionality": "This file implements the RecipientService interface, managing operations related to notification recipients, including their retrieval and management."
+        },
+        {
+            "file": "notification-service/src/main/java/com/piggymetrics/notification/service/RecipientService.java",
+            "Functionality": "This file defines the RecipientService interface which outlines methods for managing recipient information, such as fetching recipients by account details."
+        },
+        {
+            "file": "notification-service/src/main/java/com/piggymetrics/notification/service/EmailService.java",
+            "Functionality": "This file defines the EmailService interface, which outlines the contract for sending emails within the notification system."
+        },
+        {
+            "file": "notification-service/src/main/java/com/piggymetrics/notification/domain/Recipient.java",
+            "Functionality": "This file represents the Recipient domain model, encapsulating attributes related to a notification recipient, such as their name and email."
+        },
+        {
+            "file": "notification-service/src/main/java/com/piggymetrics/notification/domain/NotificationType.java",
+            "Functionality": "Defines an enumeration of notification types, including 'BACKUP' and 'ALERT', facilitating the categorization of various notifications in the system."
+        },
+        {
+            "file": "notification-service/src/main/java/com/piggymetrics/notification/domain/NotificationSettings.java",
+            "Functionality": "Represents the configuration settings for notifications, including options for activation, frequency, and the last notification time, allowing for customizable user notification preferences."
+        },
+        {
+            "file": "notification-service/src/main/java/com/piggymetrics/notification/domain/Frequency.java",
+            "Functionality": "Defines an enumeration for different notification frequencies (e.g., WEEKLY, MONTHLY), providing a convenient way to manage and interpret the intervals at which notifications are sent."
+        },
+        {
+            "file": "notification-service/src/main/java/com/piggymetrics/notification/repository/RecipientRepository.java",
+            "Functionality": "A Spring Data MongoDB repository interface for managing 'Recipient' entities, providing CRUD operations and additional query capabilities for the recipient database."
+        },
+        {
+            "file": "notification-service/src/main/java/com/piggymetrics/notification/repository/converter/FrequencyWriterConverter.java",
+            "Functionality": "Implements a converter for writing Frequency enumeration values to a database-friendly Integer format, ensuring that the frequency data is stored correctly."
+        },
+        {
+            "file": "notification-service/src/main/java/com/piggymetrics/notification/repository/converter/FrequencyReaderConverter.java",
+            "Functionality": "Implements a converter for reading Integer values from the database and converting them back into Frequency enumeration values, facilitating seamless data retrieval."
+        },
+        {
+            "file": "notification-service/src/main/java/com/piggymetrics/notification/config/ResourceServerConfig.java",
+            "Functionality": "Configures the security settings for the resource server using OAuth2, enabling secure access to resources within the notification microservice."
+        },
+        {
+            "file": "notification-service/src/test/java/com/piggymetrics/notification/NotificationServiceApplicationTests.java",
+            "Functionality": "Contains unit tests to verify the application context loading and configuration for the Notification Service, ensuring that the Spring context is correctly set up."
+        },
+        {
+            "file": "notification-service/src/test/java/com/piggymetrics/notification/controller/RecipientControllerTest.java",
+            "Functionality": "Tests the functionality of the RecipientController class, ensuring that the RESTful APIs for managing recipients are working as intended."
+        },
+        {
+            "file": "notification-service/src/test/java/com/piggymetrics/notification/service/RecipientServiceImplTest.java",
+            "Functionality": "Contains unit tests for the RecipientServiceImpl class, verifying the logic related to recipient management and ensuring that service methods perform as expected."
+        },
+        {
+            "file": "notification-service/src/test/java/com/piggymetrics/notification/service/NotificationServiceImplTest.java",
+            "Functionality": "Tests the NotificationServiceImpl class, focusing on the logic and functionality for handling notifications, ensuring accuracy in notification delivery."
+        },
+        {
+            "file": "notification-service/src/test/java/com/piggymetrics/notification/service/EmailServiceImplTest.java",
+            "Functionality": "Provides unit tests for the EmailServiceImpl class, verifying the email sending logic and ensuring that notifications are dispatched correctly via email."
+        },
+        {
+            "file": "notification-service/src/test/java/com/piggymetrics/notification/repository/RecipientRepositoryTest.java",
+            "Functionality": "Tests the RecipientRepository class, ensuring that database operations for the Recipient entity are functioning and returning expected results."
+        },
+        {
+            "file": "turbine-stream-service/src/main/java/com/piggymetrics/turbine/TurbineStreamServiceApplication.java",
+            "Functionality": "Entry point for the Turbine Stream Service application, setting up the Spring Boot application configuration for monitoring service metrics."
+        },
+        {
+            "file": "turbine-stream-service/src/test/java/com/piggymetrics/turbine/TurbineStreamServiceApplicationTests.java",
+            "Functionality": "Contains unit tests for the Turbine Stream Service application, primarily to validate the correct loading of the application context and its configurations."
+        },
+        {
+            "file": "config/src/main/java/com/piggymetrics/config/ConfigApplication.java",
+            "Functionality": "Bootstraps the configuration server application, facilitating centralized management of configuration properties for microservices."
+        },
+        {
+            "file": "config/src/main/java/com/piggymetrics/config/SecurityConfig.java",
+            "Functionality": "This file contains the security configuration for the Spring Boot application. It extends WebSecurityConfigurerAdapter to set up the security policies. It disables Cross-Site Request Forgery (CSRF) protection for the application and allows all requests to the '/actuator/**' endpoints for monitoring and health checks, while enforcing authentication for all other requests. The configuration uses HTTP Basic Authentication to secure the endpoints that require user authentication, ensuring that sensitive operations remain protected."
+        }
+    ]
+}

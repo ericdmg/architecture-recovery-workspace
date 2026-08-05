@@ -1,0 +1,58 @@
+@startuml
+skinparam fixCircleLabelOverlapping true
+skinparam componentStyle uml2
+node nodecom_piggymetrics_account {
+component com_piggymetrics_account {
+[com_piggymetrics_account_client_AuthServiceClient] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_account_client_StatisticsServiceClient] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_account_client_StatisticsServiceClientFallback] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_account_controller_AccountController] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_account_repository_AccountRepository] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_account_service_AccountServiceImpl] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+}
+}
+node nodecom_piggymetrics_auth {
+component com_piggymetrics_auth {
+[com_piggymetrics_auth_controller_UserController] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_auth_repository_UserRepository] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_auth_service_UserServiceImpl] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_auth_service_security_MongoUserDetailsService] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+}
+}
+node nodecom_piggymetrics_notification {
+component com_piggymetrics_notification {
+[com_piggymetrics_notification_client_AccountServiceClient] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_notification_controller_RecipientController] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_notification_repository_RecipientRepository] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_notification_service_EmailServiceImpl] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_notification_service_NotificationServiceImpl] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_notification_service_RecipientServiceImpl] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+}
+}
+node nodecom_piggymetrics_statistics {
+component com_piggymetrics_statistics {
+[com_piggymetrics_statistics_client_ExchangeRatesClient] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_statistics_client_ExchangeRatesClientFallback] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_statistics_controller_StatisticsController] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_statistics_repository_DataPointRepository] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_statistics_service_ExchangeRatesServiceImpl] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+[com_piggymetrics_statistics_service_StatisticsServiceImpl] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+}
+}
+node nodecom_piggymetrics_notification_service_Environment_Provider {
+[com_piggymetrics_notification_service_Environment_Provider] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+}
+node nodecom_piggymetrics_notification_service_JavaMailSender_Provider {
+[com_piggymetrics_notification_service_JavaMailSender_Provider] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+}
+node noderates_client_latest_Provider {
+[rates_client_latest_Provider] [[piggymetrics.system#_IWUlMoqwEfGXBJqyQuTzMA]]
+}
+[nodecom_piggymetrics_account] - [nodecom_piggymetrics_notification]
+[nodecom_piggymetrics_auth] - [nodecom_piggymetrics_account]
+[nodecom_piggymetrics_notification_service_Environment_Provider] - [nodecom_piggymetrics_notification]
+[nodecom_piggymetrics_notification_service_JavaMailSender_Provider] - [nodecom_piggymetrics_notification]
+[nodecom_piggymetrics_statistics] - [nodecom_piggymetrics_account]
+[noderates_client_latest_Provider] - [nodecom_piggymetrics_statistics]
+
+@enduml

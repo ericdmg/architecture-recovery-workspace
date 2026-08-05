@@ -26,8 +26,22 @@ tmp/
 .DS_Store
 
 # Resultados grandes/intermediários
+# Resultados experimentais
+# Ignorar por padrão, mas versionar os artefatos científicos selecionados.
 results/*
 !results/.gitkeep
+
+!results/raw/
+!results/raw/**
+
+!results/normalized/
+!results/normalized/**
+
+!results/metrics/
+!results/metrics/**
+
+!results/manifests/
+!results/manifests/**
 
 # Arquivos de sistema
 Thumbs.db

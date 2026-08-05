@@ -1,0 +1,472 @@
+{
+    "@schemaVersion": "1.0",
+    "name": "clustering",
+    "structure": [
+        {
+            "@type": "group",
+            "name": "0",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/TimePeriod.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/repository/converter/DataPointIdWriterConverter.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/config/ResourceServerConfig.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/Item.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/service/security/CustomUserInfoTokenServices.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/test/java/com/piggymetrics/statistics/service/StatisticsServiceImplTest.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/Saving.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/test/java/com/piggymetrics/statistics/StatisticsServiceApplicationTests.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/service/ExchangeRatesService.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/test/java/com/piggymetrics/statistics/controller/StatisticsControllerTest.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/ExchangeRatesContainer.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/timeseries/DataPointId.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/service/StatisticsServiceImpl.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/client/ExchangeRatesClient.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/repository/converter/DataPointIdReaderConverter.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/timeseries/DataPoint.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/repository/DataPointRepository.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/service/StatisticsService.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/test/java/com/piggymetrics/statistics/service/ExchangeRatesServiceImplTest.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/StatisticsApplication.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/Currency.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/service/ExchangeRatesServiceImpl.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/timeseries/StatisticMetric.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/test/java/com/piggymetrics/statistics/repository/DataPointRepositoryTest.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/client/ExchangeRatesClientFallback.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/controller/StatisticsController.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/Account.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/main/java/com/piggymetrics/statistics/domain/timeseries/ItemMetric.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "statistics-service/src/test/java/com/piggymetrics/statistics/client/ExchangeRatesClientTest.java"
+                }
+            ]
+        },
+        {
+            "@type": "group",
+            "name": "1",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/main/java/com/piggymetrics/notification/service/EmailServiceImpl.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/main/java/com/piggymetrics/notification/service/RecipientService.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/main/java/com/piggymetrics/notification/service/NotificationService.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/main/java/com/piggymetrics/notification/domain/NotificationSettings.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/test/java/com/piggymetrics/notification/NotificationServiceApplicationTests.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/main/java/com/piggymetrics/notification/repository/converter/FrequencyWriterConverter.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/main/java/com/piggymetrics/notification/controller/RecipientController.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/main/java/com/piggymetrics/notification/domain/NotificationType.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/main/java/com/piggymetrics/notification/service/EmailService.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/test/java/com/piggymetrics/notification/service/NotificationServiceImplTest.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/main/java/com/piggymetrics/notification/NotificationServiceApplication.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/main/java/com/piggymetrics/notification/client/AccountServiceClient.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/main/java/com/piggymetrics/notification/service/RecipientServiceImpl.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/test/java/com/piggymetrics/notification/service/EmailServiceImplTest.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/main/java/com/piggymetrics/notification/service/NotificationServiceImpl.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/test/java/com/piggymetrics/notification/repository/RecipientRepositoryTest.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/main/java/com/piggymetrics/notification/domain/Frequency.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/main/java/com/piggymetrics/notification/repository/RecipientRepository.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/main/java/com/piggymetrics/notification/domain/Recipient.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/main/java/com/piggymetrics/notification/config/ResourceServerConfig.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/main/java/com/piggymetrics/notification/repository/converter/FrequencyReaderConverter.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/test/java/com/piggymetrics/notification/controller/RecipientControllerTest.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "notification-service/src/test/java/com/piggymetrics/notification/service/RecipientServiceImplTest.java"
+                }
+            ]
+        },
+        {
+            "@type": "group",
+            "name": "2",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "account-service/src/main/java/com/piggymetrics/account/domain/Saving.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/main/java/com/piggymetrics/account/client/AuthServiceClient.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/main/java/com/piggymetrics/account/client/StatisticsServiceClient.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/main/java/com/piggymetrics/account/controller/AccountController.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/main/java/com/piggymetrics/account/AccountApplication.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/main/java/com/piggymetrics/account/domain/Currency.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/main/java/com/piggymetrics/account/client/StatisticsServiceClientFallback.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/main/java/com/piggymetrics/account/controller/ErrorHandler.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/main/java/com/piggymetrics/account/domain/User.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/test/java/com/piggymetrics/account/AccountServiceApplicationTests.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/main/java/com/piggymetrics/account/service/AccountService.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/main/java/com/piggymetrics/account/domain/Account.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/main/java/com/piggymetrics/account/service/security/CustomUserInfoTokenServices.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/test/java/com/piggymetrics/account/repository/AccountRepositoryTest.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/main/java/com/piggymetrics/account/domain/TimePeriod.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/main/java/com/piggymetrics/account/domain/Item.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/test/java/com/piggymetrics/account/controller/AccountControllerTest.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/main/java/com/piggymetrics/account/repository/AccountRepository.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/main/java/com/piggymetrics/account/config/ResourceServerConfig.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/main/java/com/piggymetrics/account/service/AccountServiceImpl.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/test/java/com/piggymetrics/account/service/AccountServiceTest.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "account-service/src/test/java/com/piggymetrics/account/client/StatisticsServiceClientFallbackTest.java"
+                }
+            ]
+        },
+        {
+            "@type": "group",
+            "name": "3",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "auth-service/src/main/java/com/piggymetrics/auth/repository/UserRepository.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "auth-service/src/main/java/com/piggymetrics/auth/service/UserServiceImpl.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "auth-service/src/main/java/com/piggymetrics/auth/controller/UserController.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "auth-service/src/main/java/com/piggymetrics/auth/config/OAuth2AuthorizationConfig.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "auth-service/src/main/java/com/piggymetrics/auth/domain/User.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "auth-service/src/test/java/com/piggymetrics/auth/service/security/MongoUserDetailsServiceTest.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "auth-service/src/test/java/com/piggymetrics/auth/AuthServiceApplicationTests.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "auth-service/src/test/java/com/piggymetrics/auth/controller/UserControllerTest.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "auth-service/src/test/java/com/piggymetrics/auth/service/UserServiceTest.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "auth-service/src/test/java/com/piggymetrics/auth/repository/UserRepositoryTest.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "auth-service/src/main/java/com/piggymetrics/auth/service/UserService.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "auth-service/src/main/java/com/piggymetrics/auth/AuthApplication.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "auth-service/src/main/java/com/piggymetrics/auth/config/WebSecurityConfig.java"
+                },
+                {
+                    "@type": "item",
+                    "name": "auth-service/src/main/java/com/piggymetrics/auth/service/security/MongoUserDetailsService.java"
+                }
+            ]
+        },
+        {
+            "@type": "group",
+            "name": "4",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "config/src/main/java/com/piggymetrics/config/ConfigApplication.java"
+                }
+            ]
+        },
+        {
+            "@type": "group",
+            "name": "5",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "config/src/main/java/com/piggymetrics/config/SecurityConfig.java"
+                }
+            ]
+        },
+        {
+            "@type": "group",
+            "name": "6",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "gateway/src/main/java/com/piggymetrics/gateway/GatewayApplication.java"
+                }
+            ]
+        },
+        {
+            "@type": "group",
+            "name": "7",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "gateway/src/test/java/com/piggymetrics/gateway/GatewayApplicationTests.java"
+                }
+            ]
+        },
+        {
+            "@type": "group",
+            "name": "8",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "monitoring/src/main/java/com/piggymetrics/monitoring/MonitoringApplication.java"
+                }
+            ]
+        },
+        {
+            "@type": "group",
+            "name": "9",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "monitoring/src/test/java/com/piggymetrics/monitoring/MonitoringApplicationTests.java"
+                }
+            ]
+        },
+        {
+            "@type": "group",
+            "name": "10",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "registry/src/main/java/com/piggymetrics/registry/RegistryApplication.java"
+                }
+            ]
+        },
+        {
+            "@type": "group",
+            "name": "11",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "turbine-stream-service/src/main/java/com/piggymetrics/turbine/TurbineStreamServiceApplication.java"
+                }
+            ]
+        },
+        {
+            "@type": "group",
+            "name": "12",
+            "nested": [
+                {
+                    "@type": "item",
+                    "name": "turbine-stream-service/src/test/java/com/piggymetrics/turbine/TurbineStreamServiceApplicationTests.java"
+                }
+            ]
+        }
+    ]
+}
